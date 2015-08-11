@@ -17,12 +17,14 @@ before_script:
 script:
 - cd ..
 - which multimarkdown
-- chmod +x mmd2bok
-- "./mmd2bok"
+- chmod +x mmd2bok.sh
+- "./mmd2bok.sh"
 deploy:
   provider: releases
   api_key:
     secure: sxuX2ZAMsmmxnBmiyQP3D2EuhUY67CF30+4JoJxejVtG9d03Bf9pLKyMJ1pTUhWIDmXSGy+X1ue277jpLW6/e4hWrmk7abideTDH+YaPb7Jz+q5cbtPe1SLD3fpkLCI+rAvssdthaoBf9iKt1dxFxCFOBWiW3TSkGTCswHTHgML61A7QyAwMaf3gYFe83lAk9OCdeOH35ft6KaUCZy3EUV9QlTKoHTTcY2rjlhKYhAPlCvp04CDb++ZN9qdLuvV0qz59kYnbjpILRF77lWJ2S8WJLb3oyFRNa6d0fkn/3azTYpyMaW5E4XDkVezB62GiT571iteozKzbeZpH7e+Ay48WCsJglZ8OtPsAM+az5OJVgrZZGeqsE/IRYvOO4MX+xKyQX5aUN3i2LlsEk3gaZ069Mzz1L6w+4zcNOYgx6qd6nNTo7a5x+MzsPGujbWsUNCiF4vQQaoLEGuACp443nGuJIv/gsInkM2X7IFdF2ezmAr1S1arHRnWOfdhmGni1LZuEoMES5VwCRYwpdDFxrrtBsJTVSFDc7paNtVnf5wH9C7CfLS2P+oxJJH6Kpg0O6ezhQfczg9XqmCiFzxMw6ojHeiyOnn/+osWrE9TmFGSKdyfwpvqjTHe4ZPme6mNPyDdPKkDW0ns4IDdrLeJGB9K3zoGHiXUsct6lPfmBQD0=
   file: OpenSourceBook.pdf
+  skip_cleanup: true
   on:
+    branch: master
     repo: Xuanwo/OpenSourceBook
