@@ -23,12 +23,12 @@ script:
 - chmod +x mmd2bok
 - "./mmd2bok"
 
-deploy:
-  provider: releases
-  api_key:
-    secure: O8zb4ytQQfLTFPA/F9UkhLIkUIOhGInqdh8hOjA6gzAt130cUTJtd0zxDadpRfRiH3P7RpPcnJdiGRbJh47OrFY3yg38QiOYDR72vZRPSY91a+jDXXc/2Ouqu3dvASJCl4SBoGK/t5LdpuU44fDai6ubs3T7Cf61KPKJWzByBcY=
-  file: acmtemplate.pdf
-  skip_cleanup: true
-  on:
-    branch: master
-    repo: Xuanwo/ACMTemplate
+# deploy:
+#   provider: releases
+#   api_key:
+#     secure: O8zb4ytQQfLTFPA/F9UkhLIkUIOhGInqdh8hOjA6gzAt130cUTJtd0zxDadpRfRiH3P7RpPcnJdiGRbJh47OrFY3yg38QiOYDR72vZRPSY91a+jDXXc/2Ouqu3dvASJCl4SBoGK/t5LdpuU44fDai6ubs3T7Cf61KPKJWzByBcY=
+#   file: acmtemplate.pdf
+#   skip_cleanup: true
+#   on:
+#     branch: master
+#     repo: Xuanwo/OpenSourceBook
